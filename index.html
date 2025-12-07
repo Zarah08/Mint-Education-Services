@@ -34,24 +34,25 @@
       -webkit-text-fill-color: transparent;
     }
     .slider {
-    position: relative;
-    width: 800px;
-    max-width: 90%;
-    height: 450px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
+  position: relative;
+  width: 100%;
+  height: 80vh; 
+  overflow: hidden;
+  margin-top: 80px; 
+}
 
-  .slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
 
   .slides img.active {
     opacity: 1;
@@ -172,6 +173,42 @@
       padding: 40px 50px;
       text-align: center;
     }
+    .slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  text-align: center;
+  color: white;
+  width: 90%;
+}
+
+.slide-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+}
+
+.slide-content p {
+  font-size: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #2BF65A, #2EA58A, #376BFF);
+  padding: 16px 38px;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
   </style>
 </head>
 <body>
@@ -194,20 +231,18 @@
       
     </div>
     <div class="overlay"></div>
-    <div class="slide-text" id="slide-text">Your Text Here</div>
-    <button class="prev">&#10094;</button>
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
-    <button class="next">&#10095;</button>
+    <div class="slide-content">
+        <h1>Fresh Solutions for Modern Learning</h1>
+        <p>Professional, flexible, and innovative educational staffing and tutoring services—designed for Nigeria's evolving learning landscape.</p>
+        <button class="btn-primary">Get Started</button>
+      </div>
+      
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+      
   </div>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Fresh Solutions for Modern Learning</h1>
-      <p>Professional, flexible, and innovative educational staffing and tutoring services—designed for Nigeria's evolving learning landscape.</p>
-      <button class="btn-primary">Get Started</button>
-    </div>
-  </section>
+  
 
   <section class="services" id="services">
     <h2>Our Services</h2>
