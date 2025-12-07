@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mint Education Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(to right, #2BF65A, #2EA58A, #376BFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .slider {
+    position: relative;
+    width: 800px;
+    max-width: 90%;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slides img.active {
+    opacity: 1;
+  }
+
+  /* Dark overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* adjust darkness here */
+    pointer-events: none; /* allows clicks through the overlay */
+    z-index: 1;
+  }
+
+  /* Text on each slide */
+  .slide-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    z-index: 2;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+  .prev { left: 15px; }
+  .next { right: 15px; }
+
+  @media(max-width: 600px){
+    .slide-text { font-size: 18px; bottom: 20px; left: 15px; }
+  }
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 150px 50px 100px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(to right, #2BF65A, #2EA58A, #376BFF);
+      padding: 14px 30px;
+      border-radius: 8px;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .services {
+      padding: 80px 50px;
+      background: #f8f8f8;
+    }
+
+    .services h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      padding: 25px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 40px 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Mint Education</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <div class="slider">
+    <div class="slides">
+      <img src="img1.jpg" alt="Image 1">
+      <img src="img2.jpg" alt="Image 2">
+      <img src="img3.jpg" alt="Image 3">
+      <img src="img4.jpg" alt="Image 4">
+     
+  
+      
+    </div>
+    <div class="overlay"></div>
+    <div class="slide-text" id="slide-text">Your Text Here</div>
+    <button class="prev">&#10094;</button>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Fresh Solutions for Modern Learning</h1>
+      <p>Professional, flexible, and innovative educational staffing and tutoring services—designed for Nigeria's evolving learning landscape.</p>
+      <button class="btn-primary">Get Started</button>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-box">
+        <h3>Educational Staff Outsourcing</h3>
+        <p>Early childhood educators, assistants, librarians, special needs aides, and more.</p>
+      </div>
+      <div class="service-box">
+        <h3>Teaching Staff</h3>
+        <p>Kindergarten, primary & secondary teachers, ESL instructors, subject experts.</p>
+      </div>
+      <div class="service-box">
+        <h3>Tutoring Services</h3>
+        <p>WAEC, JAMB, IGCSE, SAT, IELTS, homework support & personalized learning.</p>
+      </div>
+      <div class="service-box">
+        <h3>Family & Student Support</h3>
+        <p>Homeschooling support, progress assessment, school advisory services.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Mint Education Services • Victoria Island, Lagos</p>
+    <p>Email: contact@minteducation.ng • Phone: 01-8954200</p>
+    <p>© 2025 Mint Education Services</p>
+  </footer>
+</body>
+<script>
+const slides = document.querySelectorAll('.slides img');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  const slideText = document.getElementById('slide-text');
+
+  const texts = [
+    "Welcome to Slide 1",
+    "This is Slide 2",
+    "Enjoy Slide 3"
+    // Add more text corresponding to your images
+  ];
+
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach((slide, idx) => {
+      slide.classList.remove('active');
+      if(idx === i) slide.classList.add('active');
+    });
+    slideText.textContent = texts[i]; // update text
+  }
+
+  prev.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  });
+
+  next.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  });
+
+  // Auto-slide every 4 seconds
+  setInterval(() => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }, 4000);
+</script>
+
+</html>
