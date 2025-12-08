@@ -38,6 +38,9 @@
       color: #000;
       font-weight: 500;
     }
+    .nav-cta {
+   
+}
 
     .green { color: var(--primary-green); }
     .blue { color: var(--primary-blue); }
@@ -156,6 +159,76 @@
     opacity: 1 !important;
     transform: translate(0) !important;
 }
+
+/* 3D Perspective */
+.carousel-3d-container {
+    perspective: 1400px;
+    height: 350px;
+    margin-top: 30px;
+}
+
+/* Circular carousel */
+.carousel-3d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.2s cubic-bezier(.25,.8,.25,1);
+}
+
+/* Each card position */
+.carousel-3d-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+}
+
+/* Mint service card */
+.service-card-3d {
+    width: 260px;
+    padding: 25px;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12); 
+    text-align: center;
+    border-top: 5px solid transparent;
+    border-image: linear-gradient(90deg,#2BF65A,#2EA58A,#376BFF) 1;
+    transition: all .5s ease;
+    opacity: 0.9;
+}
+
+/* Active card pops forward */
+.active-3d {
+    transform: translateX(-50%) scale(1.18);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.22);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* DOTS */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    background: #d3d3d3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.carousel-dot.active {
+    background: #2EA58A;
+    transform: scale(1.3);
+}
+
 
 
 
