@@ -1207,7 +1207,7 @@
 /* Footer Styles */
 .mint-footer {
     width: 100%;
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: black;
     color: white;
     padding: 60px 0 0;
     margin-top: 40px;
@@ -1215,7 +1215,7 @@
 }
 
 .footer-content {
-    padding: 40px 0;
+    /* padding: 40px 0; */
 }
 
 .footer-section h5 {
