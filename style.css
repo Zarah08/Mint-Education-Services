@@ -80,6 +80,15 @@
     box-shadow: none !important;
     transform: scale(0.95);
 }
+/* Active nav link */
+.active-link {
+    color: #3CB371 !important;
+}
+
+.active-link::after {
+    width: 100% !important;
+}
+
 
 /* MOBILE MENU BACKGROUND */
 @media (max-width: 991px) {
