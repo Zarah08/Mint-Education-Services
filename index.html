@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mint Education Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -13,7 +14,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
     <div class="container">
         <img src="images/mintLogo.png" id="logo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <button class="navbar-toggler mint-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -24,7 +25,7 @@
                 <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">Contact us</a></li>
                 
-                <!-- <a href="#contact" class="btn btn-gradient px-4 py-2 nav-cta"><button class="btn-primary">Get Started</button></a> -->
+               
             </ul>
         </div>
     </div>
@@ -45,8 +46,8 @@
                 <div class="carousel-caption custom-caption">
                     <h1 class="hero-title">Fresh Solutions for Modern Learning</h1>
                     <p class="hero-sub">Professional, flexible, and innovative educational staffing and tutoring.</p>
-                   
-                    <a href="#contact" class="btn btn-gradient px-4 py-2"><button class="btn-primary">Get Started</button></a>
+                   <a href="#contact" class="hero-btn">Get Started</a>
+
                 </div>
             </div>
 
@@ -61,7 +62,7 @@
                 <div class="carousel-caption custom-caption">
                     <h1 class="hero-title">Professional. Reliable. Modern.</h1>
                     <p class="hero-sub">We connect schools with exceptional educators.</p>
-                    <a href="#services" class="btn btn-gradient px-4 py-2"><button class="btn-primary">Services</button></a>
+                    <a href="#contact" class="hero-btn">Get Started</a>
                 </div>
             </div>
             
@@ -76,7 +77,7 @@
                 <div class="carousel-caption custom-caption">
                      <h1 class="hero-title">Fresh Minds. Brighter Futures.</h1>
                     <p class="hero-sub">Premium educational staffing & tutoring services.</p>
-                    <a href="#services" class="btn btn-gradient px-4 py-2"><button class="btn-primary">Services</button></a>
+                    <a href="#contact" class="hero-btn">Get Started</a>
                 </div>
             </div>
 
@@ -88,16 +89,6 @@
     <div class="container">
 
         <div class="row align-items-center">
-
-            <!-- IMAGE -->
-            <div class="col-md-6 mb-4 mb-md-0 fade-left">
-                <div class="about-img-wrapper">
-                    <img src="images/img1.jpg" 
-                         class="img-fluid rounded shadow-lg about-img" alt="Mint Education">
-                    <div class="img-overlay"></div>
-                </div>
-            </div>
-
             <!-- TEXT -->
             <div class="col-md-6 fade-right">
                 <h2 class="about-title">About Mint Education Services</h2>
@@ -117,6 +108,14 @@
                 </p>
 
                <a href="#services" class="btn btn-gradient px-4 py-2"><button class="btn-primary">Learn More</button></a>
+            </div>
+             <!-- IMAGE -->
+            <div class="col-md-6 mb-4 mb-md-0 fade-left">
+                <div class="about-img-wrapper">
+                    <img src="images/img1.jpg" 
+                         class="img-fluid rounded shadow-lg about-img" alt="Mint Education">
+                    <div class="img-overlay"></div>
+                </div>
             </div>
 
         </div>
@@ -184,45 +183,63 @@
     </div>
 </section> -->
 
-<section class="py-5">
+<section id="services-3d" class="services-3d-section py-5">
     <div class="container text-center">
-        <h2 class="section-title mt-5">Our <span class="text-gradient">Services</span></h2>
 
-        <!-- 3D CAROUSEL WRAPPER -->
-        <div class="carousel-3d-container mt-5 ">
+        <!-- SECTION TITLE -->
+        <h2 class="section-title mb-4 ">
+            Our <span class="text-gradient">Services</span>
+        </h2>
+
+        <!-- 3D CAROUSEL -->
+        <div class="carousel-3d-container mt-5">
 
             <div class="carousel-3d" id="carousel3D">
 
-                <!-- Items -->
                 <div class="carousel-3d-item">
-                    <div class="service-card-3d">📘 Professional Teaching Staff</div>
+                   <div class="service-card-3d">
+        <i class="fas fa-user-tie service-icon"></i>
+        Professional Teaching Staff
+    </div>
                 </div>
 
                 <div class="carousel-3d-item">
-                    <div class="service-card-3d">🧑‍🏫 Teaching Assistants</div>
+                   <div class="service-card-3d">
+        <i class="fas fa-chalkboard-teacher service-icon"></i>
+        Teaching Assistants
+    </div>
                 </div>
 
                 <div class="carousel-3d-item">
-                    <div class="service-card-3d">🎓 Academic Tutoring</div>
+                    <div class="service-card-3d">
+        <i class="fas fa-graduation-cap service-icon"></i>
+        Academic Tutoring
+    </div>
                 </div>
 
                 <div class="carousel-3d-item">
-                    <div class="service-card-3d">👶 Early Childhood Support</div>
+                     <div class="service-card-3d">
+        <i class="fas fa-child service-icon"></i>
+        Early Childhood Support
+    </div>
                 </div>
 
                 <div class="carousel-3d-item">
-                    <div class="service-card-3d">🌍 Remote Learning Solutions</div>
+                    <div class="service-card-3d">
+        <i class="fas fa-globe service-icon"></i>
+        Remote Learning Solutions
+    </div>
                 </div>
 
             </div>
         </div>
-                      
-        <!-- DOT INDICATORS -->
-        <div class="carousel-dots" id="carouselDots"></div>
-        <a href="#services" class="btn btn-gradient px-4 py-2"><button class="btn-primary">Learn More</button></a>
 
+        <!-- DOTS -->
+        <div id="carouselDots" class="carousel-dots mt-4"></div>
+         <a href="#services" class="btn btn-gradient px-4 py-2"><button class="btn-primary">Learn More</button></a>
     </div>
 </section>
+
 
 
 <!-- Mission Section -->
@@ -284,99 +301,12 @@
 <section class="cta-section">
     <h2>Ready to Transform Your Educational Journey?</h2>
     <p>Partner with Mint Education Services and experience the difference professional, innovative educational solutions can make.</p>
-    <button class="cta-button-white" id="contact">Get Started Today</button>
+    <!-- <button class="cta-button-white" id="contact">Get Started Today</button> -->
+      <a href="#services" class="btn btn-gradient px-4 py-2"><button class="btn-primary">Get Started Today</button></a>
 </section>
 
 <!-- Footer -->
-<footer class="mint-footer">
-    <div class="container">
-        <div class="footer-content">
-            <!-- Logo and Description -->
-            <div class="row mb-5">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="footer-logo">
-                        <div class="logo-icon">M</div>
-                        <span>Mint Education</span>
-                    </div>
-                    <p style="color: rgba(255, 255, 255, 0.8); margin-top: 15px; line-height: 1.6;">
-                        Empowering learners with innovative digital education solutions. Quality education for everyone, everywhere.
-                    </p>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon" title="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon" title="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon" title="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-icon" title="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Quick Links -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <div class="footer-section">
-                        <h5>Quick Links</h5>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Resources -->
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <div class="footer-section">
-                        <h5>Resources</h5>
-                        <ul>
-                            <li><a href="#">Learning Hub</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Newsletter -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="newsletter-form">
-                        <h5>Subscribe to Newsletter</h5>
-                        <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 15px;">
-                            Get the latest updates on courses and educational tips.
-                        </p>
-                        <form id="newsletterForm">
-                            <div class="input-group-mint">
-                                <input type="email" placeholder="Enter your email" required>
-                                <button type="submit" class="btn-mint-subscribe">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 Mint Education Services. All rights reserved.</p>
-                    <div class="footer-links-bottom">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Cookie Policy</a>
-                        <a href="#">Accessibility</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
 <script>
     // Intersection Observer for scroll animations

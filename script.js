@@ -50,7 +50,7 @@ function setPositions() {
         item.style.transform = `
             rotateY(${rotation}deg)
             translateZ(420px)
-            translateY(${i === currentIndex ? "-10px" : "10px"})
+           
         `;
 
         // Pop effect
