@@ -106,31 +106,6 @@
     }
 }
 
-
-    /* header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: #fff;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 10;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    } */
-
-    /* #logo {
-      width: 100px;
-
-    } */
-   /* .nav-link { */
-      /* margin-right: 50px; */
-      /* margin-left: 25px; */
-      /* text-decoration: none;
-      color: #000;
-      font-weight: 500;
-    } */
   
 
     .green { color: var(--primary-green); }
@@ -240,11 +215,7 @@
         font-size: 1rem;
     }
 }
-/* Make caption text look premium */
-/* .custom-caption h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-} */
+
 
 .custom-caption p {
     font-size: 1.2rem;
