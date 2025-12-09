@@ -132,4 +132,18 @@ carousel.addEventListener("touchend", (e) => {
 setPositions();
 startAutoplay();
 
+// core values
+function revealOnScroll() {
+    document.querySelectorAll(".reveal").forEach((el) => {
+        const top = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (top < windowHeight - 80) {
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
 
