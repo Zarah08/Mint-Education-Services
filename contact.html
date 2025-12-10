@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Applied Mind</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+   
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <img src="images/mintLogo.png" id="logo">
+        <button class="navbar-toggler mint-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="/services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="/contact.html" class="nav-link">Contact us</a></li>
+                
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- HERO -->
+  <section class="contact-hero">
+    <img src="./images/side-view-man-studying-classroom.jpg" alt="hero" class="mt-5">
+    <h1 class="contact-hero-title">Contact</h1>
+  </section>
+
+
+  <!-- MAIN CONTENT -->
+  <section class="contact-container container">
+    <div class="row g-5">
+
+      <!-- LEFT: FORM -->
+      <div class="col-lg-7">
+        <h2 class="contact-title">Have a question?</h2>
+        <p class="contact-description">
+            To provide the best experience, we ask that you please fill out the form with your request. This helps us understand your needs and connect you with the right support.
+        </p>
+
+        <form id="contactForm">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control contact-input" placeholder="Enter your First Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control contact-input" placeholder="Enter your Last Name" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <input type="email" class="form-control contact-input" placeholder="Enter your Email" required>
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control contact-input" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary contact-submit-btn">
+            Submit Message
+          </button>
+        </form>
+      </div>
+
+
+      <!-- RIGHT: CONTACT INFO CARD -->
+      <div class="col-lg-5">
+        <div class="contact-card shadow-sm">
+          <h4 class="fw-semibold mb-4">Get in touch</h4>
+          <p class="text-muted">We are here to support your educational journey.</p>
+
+          <div class="contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <strong>Address</strong><br>
+            33 Sinari Daranijo Street, Victoria Island, Lagos, Nigeria
+          </div>
+
+          <div class="contact-item">
+            <i class="bi bi-telephone"></i>
+            <strong>Phone</strong><br>
+            01-8954200
+          </div>
+
+          <div class="contact-item">
+            <i class="bi bi-envelope"></i>
+            <strong>Email</strong><br>
+            contact@minteducation.ng
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer class="mint-footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Logo and Description -->
+            <div class="row mb-5">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-logo">
+                        <img src="images/mintLogo.png" id="logo" style="background-color: white;">
+                    </div>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-top: 15px; line-height: 1.6;">
+                        Empowering learners with innovative digital education solutions. Quality education for everyone, everywhere.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="#">Learning Hub</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="newsletter-form">
+                        <h5>Subscribe to Newsletter</h5>
+                        <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 15px;">
+                            Get the latest updates on courses and educational tips.
+                        </p>
+                        <form id="newsletterForm">
+                            <div class="input-group-mint">
+                                <input type="email" placeholder="Enter your email" required>
+                                <button type="submit" class="btn-mint-subscribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Mint Education Services. All rights reserved.</p>
+                    <div class="footer-links-bottom">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <!-- Bootstrap JS + Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <script>
+    // Simple form submission handler (example)
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been submitted.");
+    });
+  </script>
+
+</body>
+</html>
