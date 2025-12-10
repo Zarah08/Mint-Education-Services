@@ -147,3 +147,18 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
+
+// About page
+// Intersection Observer Animation
+const observer1 = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('show');
+}
+})
+}, {
+threshold: 0.2
+});
+
+
+document.querySelectorAll('.fade-up, .fade-in').forEach((el) => observer1.observe(el));
