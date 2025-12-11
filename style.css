@@ -2119,3 +2119,144 @@ transform: none;
       font-size: 1.8rem;
     }
   }
+  /* FAQ */
+.faq-section {
+      max-width: 850px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .faq-title {
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .accordion-button {
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+        /* Border + hover mint effect */
+    .accordion-button:hover {
+        /* border-color: #2EA58A; */
+      border-left: 4px solid var(--mint);
+      background: #f9fffd;
+      color: #000;
+    }
+    .accordion-button:not(.collapsed) {
+      border-left: 4px solid green;
+      background: #f9fffd;
+      color: #000;
+      box-shadow: none;
+    }
+    .accordion-item {
+      border: 1px solid green;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: transform .2s ease;
+    }
+
+    /* .accordion-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    } */
+    /* Rotate icon when opened */
+    .accordion-button:not(.collapsed)::after {
+      transform: rotate(180deg);
+    }
+
+    .accordion-body {
+      animation: fadeDown 0.35s ease;
+    }
+
+    /* Fade animation */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Careers page */
+    :root { --mint: #b7f5c8; --mint-dark: #3cb371; }
+    body { font-family: 'Arial', sans-serif; background:#f8f9fa; }
+
+    /* HERO */
+     .hero-banner {
+    background: #d8f5d0;
+    border-radius: 25px;
+    padding: 0px 20px;
+    /* margin-bottom: 100px; */
+    margin: 20px auto;
+  }
+      /* Fade-up animation */
+  @keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-up {
+    opacity: 0;
+    animation: fadeUp 1.3s ease-out forwards;
+  }
+
+  .hero-img {
+    max-width: 380px;
+  }
+
+  @media(max-width: 768px){
+    .hero-banner { text-align: center; padding: 60px 20px; }
+    .hero-img { max-width: 260px; margin-bottom: 50px; }
+  }
+    /* .hero-section {
+      background: var(--mint);
+      padding: 90px 20px;
+      border-radius: 20px;
+      animation: fadeUp 1s ease;
+    } */
+
+    /* Section Titles */
+    .section-title { font-size: 2.4rem; font-weight: 700; margin-bottom: 20px; }
+
+    /* 3-column why-mint cards */
+    .mint-card {
+      background: white;
+      border: 2px solid var(--mint);
+      border-radius: 18px;
+      padding: 25px;
+      transition: .3s;
+      height: 100%;
+    }
+    .mint-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--mint-dark);
+      box-shadow: 0 5px 18px rgba(0,0,0,0.09);
+    }
+
+    /* Job cards */
+    .job-card {
+      background:white;
+      border:2px solid #eaeaea;
+      border-radius:15px;
+      padding:20px;
+      transition:.3s;
+    }
+    .job-card:hover {
+      border-color: var(--mint-dark);
+      transform: translateY(-5px);
+    }
+
+    /* Application Process */
+    .process-step {
+      border-left:4px solid var(--mint-dark);
+      padding:10px 15px;
+      margin-bottom:10px;
+      background:white;
+      border-radius:6px;
+      transition:.3s;
+    }
+    .process-step:hover { background: var(--mint); }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(40px);} to { opacity:1; transform:translateY(0);} }
