@@ -420,14 +420,14 @@
     .carousel-3d-container {
         height: 300px;
         margin-top: 40px;
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
 
     .service-card-3d {
-        width: 150px;
+        width: 120px;
         font-size: 1rem;
         padding: 18px;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 
     .active-3d {
