@@ -2152,8 +2152,6 @@ transform: none;
   .cta-title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
-    font-family: 'Playfair Display', serif;
     position: relative;
     z-index: 2;
   }
@@ -2270,7 +2268,7 @@ transform: none;
 
     /* Careers page */
     :root { --mint: #b7f5c8; --mint-dark: #3cb371; }
-    body { font-family: 'Arial', sans-serif; background:#f8f9fa; }
+ 
 
     /* HERO */
      .hero-banner {
@@ -2354,7 +2352,12 @@ transform: none;
 
       .section-title {
 }
-
+:root {
+--mint: #2BF65A;
+--teal: #2EA58A;
+--blue: #376BFF;
+--dark: #000000;
+}
 
 .section-subtitle {
 color: var(--teal);
