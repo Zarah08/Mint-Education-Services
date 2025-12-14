@@ -174,15 +174,122 @@
 <!-- ROTATING WHEEL SECTION -->
 <section class="wheel-section">
   <div class="wheel-container">
-    <h2 class="wheel-title">Why Mint Education?</h2>
+    <!-- <h2 class="wheel-title">Why Mint Education?</h2>
+   
     <div class="rotating-wheel">
       <div class="wheel-center">5</div>
-    </div>
+    </div> -->
     <p class="wheel-label">
       <strong>Five core services</strong> designed to provide comprehensive educational support to students, families, and institutions of all sizes.
     </p>
   </div>
+  <div class="container mb-5">
+
+
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<div class="mint-card fade-up">
+<div class="icon">🎓</div>
+<h5>Highly Qualified Educators</h5>
+<p>We recruit trained, vetted, and experienced education professionals.</p>
+</div>
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+<div class="mint-card fade-up">
+<div class="icon">🧩</div>
+<h5>Flexible Learning Support</h5>
+<p>Choose remote or onsite staff and tutors based on your needs.</p>
+</div>
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+<div class="mint-card fade-up">
+<div class="icon">💡</div>
+<h5>Modern, Post-Pandemic Solutions</h5>
+<p>Technology-driven learning with adaptable support systems.</p>
+</div>
+</div>
+
+
+<div class="col-md-6 col-lg-6">
+<div class="mint-card fade-up">
+<div class="icon">🏫</div>
+<h5>Comprehensive Services</h5>
+<p>From families to schools, early childhood to secondary education.</p>
+</div>
+</div>
+
+
+<div class="col-md-6 col-lg-6">
+<div class="mint-card fade-up">
+<div class="icon">🛡️</div>
+<h5>Trusted & Reliable</h5>
+<p>Safe processes, quality assurance, and continuous support.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
+
+<!-- <section class="why-mint py-5">
+<div class="container">
+<div class="text-center mb-5">
+<h2 class="section-title">Why Choose Mint</h2>
+<p class="section-subtitle">Education solutions you can trust</p>
+</div>
+
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<div class="mint-card fade-up">
+<div class="icon">🎓</div>
+<h5>Highly Qualified Educators</h5>
+<p>We recruit trained, vetted, and experienced education professionals.</p>
+</div>
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+<div class="mint-card fade-up">
+<div class="icon">🧩</div>
+<h5>Flexible Learning Support</h5>
+<p>Choose remote or onsite staff and tutors based on your needs.</p>
+</div>
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+<div class="mint-card fade-up">
+<div class="icon">💡</div>
+<h5>Modern, Post-Pandemic Solutions</h5>
+<p>Technology-driven learning with adaptable support systems.</p>
+</div>
+</div>
+
+
+<div class="col-md-6 col-lg-6">
+<div class="mint-card fade-up">
+<div class="icon">🏫</div>
+<h5>Comprehensive Services</h5>
+<p>From families to schools, early childhood to secondary education.</p>
+</div>
+</div>
+
+
+<div class="col-md-6 col-lg-6">
+<div class="mint-card fade-up">
+<div class="icon">🛡️</div>
+<h5>Trusted & Reliable</h5>
+<p>Safe processes, quality assurance, and continuous support.</p>
+</div>
+</div>
+</div>
+</div>
+</section> -->
 
 <div class="faq-section">
   <h2 class="faq-title">Frequently Asked Questions</h2>
@@ -307,7 +414,7 @@ $\to$ Place. Email: careers@minteducation.ng.
             <div class="row mb-5">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="footer-logo">
-                        <img src="images/mintLogo.png" id="logo" style="background-color: white;">
+                        <img src="images/mintLogo.png" id="logo">
                     </div>
                     <p style="color: rgba(255, 255, 255, 0.8); margin-top: 15px; line-height: 1.6;">
                         Empowering learners with innovative digital education solutions. Quality education for everyone, everywhere.
@@ -333,11 +440,10 @@ $\to$ Place. Email: careers@minteducation.ng.
                     <div class="footer-section">
                         <h5>Quick Links</h5>
                         <ul>
-                            <li><a href="/">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#">Courses</a></li>
-                            <li><a href="/about.html">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -347,10 +453,8 @@ $\to$ Place. Email: careers@minteducation.ng.
                     <div class="footer-section">
                         <h5>Resources</h5>
                         <ul>
-                            <li><a href="#">Learning Hub</a></li>
                             <li><a href="#">Documentation</a></li>
                             <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Community</a></li>
                             <li><a href="#">Support</a></li>
                         </ul>
                     </div>
@@ -392,6 +496,20 @@ $\to$ Place. Email: careers@minteducation.ng.
 
 <!-- BOOTSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('show');
+}
+});
+}, { threshold: 0.2 });
 
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
+
+
+
