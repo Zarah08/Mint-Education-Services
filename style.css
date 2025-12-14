@@ -1482,18 +1482,20 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 30px 0 20px;
     margin-top: 40px;
+    text-align: center;
 }
 
 .footer-bottom-content {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 20px;
 }
 
 .footer-bottom p {
-    margin: 0;
+
+    margin-left: 10px;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -1738,7 +1740,7 @@ transform: none;
       width: 100%;
       /* padding-top: 40px; */
       height: 220px; 
-      margin: 0 15px; /* horizontal margin */
+      /* margin: 0 15px; horizontal margin */
     }
   
     .contact-hero img {
